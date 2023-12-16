@@ -1,14 +1,12 @@
 package com.globallogic.TestsUI;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class AddItemToShoppingCartTests extends TestsBaseUI{
+public class AddItemToShoppingCartUITests extends TestsBaseUI{
 
     @Test(priority = 1)
     public void addComputerToShoppingCartTest(){

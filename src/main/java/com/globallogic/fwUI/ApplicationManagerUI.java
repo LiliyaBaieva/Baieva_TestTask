@@ -1,22 +1,20 @@
 package com.globallogic.fwUI;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class ApplicationManager {
+public class ApplicationManagerUI {
 
     String browser;
     WebDriver driver;
-    ItemsHelper items;
+    ItemsHelperUI items;
 
     public static final String BASE_URL = "http://demowebshop.tricentis.com";
 
-    public ApplicationManager(String browser) {
+    public ApplicationManagerUI(String browser) {
         this.browser = browser;
     }
 
@@ -32,11 +30,11 @@ public class ApplicationManager {
             driver = (WebDriver) new EdgeDriver();
         }
 
-        items = new ItemsHelper(driver);
+        items = new ItemsHelperUI(driver);
 
     }
 
-    public ItemsHelper getItems() {
+    public ItemsHelperUI getItems() {
         return items;
     }
 

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.List;
 
-public class ItemsHelper extends BaseHelperUI{
+public class ItemsHelperUI extends BaseHelperUI{
 
-    public ItemsHelper(WebDriver driver) {
+    public ItemsHelperUI(WebDriver driver) {
         super(driver);
     }
 

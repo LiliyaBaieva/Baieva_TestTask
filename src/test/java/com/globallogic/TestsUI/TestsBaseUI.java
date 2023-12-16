@@ -1,6 +1,6 @@
 package com.globallogic.TestsUI;
 
-import com.globallogic.fwUI.ApplicationManager;
+import com.globallogic.fwUI.ApplicationManagerUI;
 import org.openqa.selenium.remote.Browser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +15,7 @@ import java.util.Arrays;
 
 public class TestsBaseUI {
 
-    protected static ApplicationManager app = new ApplicationManager(
+    protected static ApplicationManagerUI app = new ApplicationManagerUI(
             System.getProperty("browser", Browser.CHROME.browserName()));
 
     Logger logger = LoggerFactory.getLogger(TestsBaseUI.class);
